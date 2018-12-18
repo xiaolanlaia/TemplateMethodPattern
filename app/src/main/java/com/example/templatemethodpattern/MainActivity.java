@@ -9,5 +9,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AbstractComputer computer = new CoderComputer();
+        computer.startUp();
+
+        computer = new MilitaryComputer();
+        computer.startUp();
     }
 }
